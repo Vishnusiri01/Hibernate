@@ -68,6 +68,12 @@ public class StudentEntity implements Serializable{
 	public void setHighestQualification(String highestQualification) {
 		this.highestQualification = highestQualification;
 	}
+
+	@Override
+	public String toString() {
+		return "StudentEntity [id=" + id + ", name=" + name + ", email=" + email + ", yearOfPassing=" + yearOfPassing
+				+ ", highestQualification=" + highestQualification + "]";
+	}
 	
 	
 	

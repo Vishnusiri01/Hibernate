@@ -1,7 +1,6 @@
 package com.hibernate.student.repository;
 
 import org.hibernate.Session;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -48,6 +47,7 @@ public class StudentRepository {
 //		String query="delete from student where id=:d";
 //		Query query2 = session.createQuery(query);
 //		session.delete(query2);
+		
 		Transaction transaction = session.beginTransaction();
 		session.delete(studentById);
 		transaction.commit();
